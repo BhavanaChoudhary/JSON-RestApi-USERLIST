@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON TO-DO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JSON TO-DO LIST USING API</h1>
+    <ul class="user-list"></ul>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response=>response.json())
+        .then(json=>{
+            let list="";
+            json.forEach(todo=> {
+                    list += `<li>${todo.title} -> ID: ${todo.id}</li>`;
+                });
+            document.querySelector(".user-list").innerHTML=list;
+            console.log(json);
+        })
+    </script>
+</body>
+</html>

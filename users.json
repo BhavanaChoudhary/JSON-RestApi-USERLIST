@@ -1,0 +1,38 @@
+{
+    "users":[
+        {
+    "name":"Dipesh Malviya",
+    "age":29,
+    "isProgrammer":true,
+    "skills":["HTML","CSS","JavaScript"],
+    "address":{
+        "city":"Mumbai",
+        "state":"MH",
+        "country":"India"
+    }
+    },
+    {
+        "name":"Mikesh Gadekar",
+        "age":29,
+        "isProgrammer":true,
+        "skills":["DB2","MongoDB","JavaScript"],
+        "address":{
+            "city":"Delhi",
+            "state":"DL",
+            "country":"India"
+        }
+        },
+        {
+            "name":"Amit Dubey",
+            "age":32,
+            "isProgrammer":false,
+            "skills":[],
+            "address":{
+                "city":"Mumbai",
+                "state":"MH",
+                "country":"India"
+            }
+            }
+
+]
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+h1 {
+    color: #333; /* Dark text color for the title */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Space above the title */
+}
+
+.user-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    counter-reset: user-counter; /* Initialize counter */
+}
+
+.user-list li {
+    background-color: #2196F3; /* Change to a blue background */
+    color: white; /* White text color */
+    padding: 15px; /* Padding inside each item */
+    margin: 10px 0; /* Margin between items */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+.user-list li::before {
+    counter-increment: user-counter; /* Increment counter */
+    content: counter(user-counter) ". "; /* Display counter */
+    color: white; /* White color for the numbers */
+    background-color: #ff5722; /* Orange background for the numbers */
+    padding: 5px 10px; /* Padding around the number */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between number and text */
+}
